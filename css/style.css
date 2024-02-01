@@ -757,6 +757,7 @@ header .form::after {
   padding-top: 60px;
   padding-bottom: 60px;
   display: flex;
+  
   background-image: url(../images/stat-back.jpg);
   color:white;
   background-size: cover;
@@ -772,8 +773,12 @@ header .form::after {
   left: 0;
   top:0;
 }
+.quote .text{
+  width: 100%;
+}
 .quote h2 , .quote p{
   position: relative;
+  width: 100%;
   z-index: 2;
 }
 .quote h2{
@@ -870,7 +875,8 @@ padding: 30px;
 /* start subscribe  */
 .subscribe{
   display:flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
   padding: 60px 20px;
   background-size: cover;
   gap: 20px;
@@ -891,7 +897,7 @@ padding: 30px;
   height: 45px;
   flex: 1;
   justify-content: flex-start;
-  flex-basis: 50%;
+  flex-basis: 20%;
   max-width: 400px;
 }
 @media (max-width:991px){
@@ -900,7 +906,7 @@ padding: 30px;
   }
 }
 .subscribe .p{
-  flex-basis: 50%;
+  flex-basis: 80%;
 }
 .subscribe .email i{
   font-size: 20px;
